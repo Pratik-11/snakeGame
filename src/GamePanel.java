@@ -111,13 +111,15 @@ public class GamePanel extends JPanel implements ActionListener{
     }
 
     public void checkHit() {
-        // check if head run into its body
+        // check if head cuts into its own body
+
         for (int i = length; i > 0; i--) {
         if (x[0] ==  x[i] && y[0] == y[i]) {
         running = false;
         }
         }
-        // check if head run into walls
+        // check if head run into the walls
+
         if (x[0] < 0 || x[0] > Width || y[0] < 0 || y[0] > HEIGHT) {
         running = false;
         }
