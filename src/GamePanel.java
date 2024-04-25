@@ -41,7 +41,8 @@ public class GamePanel extends JPanel implements ActionListener{
 		addFood();
 		running = true;
 		
-		timer = new Timer(70, this);
+		timer = new Timer(90, this);
+        //more the delay slower the snake
 		timer.start();	
 	}
 	
